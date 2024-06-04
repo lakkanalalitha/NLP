@@ -6,3 +6,11 @@ git branch -M main
 git remote add origin https://github.com/lakkanalalitha/NLP.git
 git push -u origin main
 C:\Users\llalitha\github\github-NLP>conda create -n NLP python=3.8 -y
+conda install -n NLP ipykernel --update-deps --force-reinstall
+
+https://github.com/cdgriffith/Box/wiki/Quick-Start
+pip install python-box[all]~=7.0 --upgrade --force
+
+from ensure import ensure_annotations
+
+https://github.com/entbappy/Branching-tutorial/raw/master/samsumdata.zip
