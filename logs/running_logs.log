@@ -53,3 +53,650 @@ Source-Age: 0
 [2024-06-04 19:04:42,365: INFO: common: yaml file: params.yaml loaded successfully]
 [2024-06-04 19:04:42,368: INFO: common: created directory at: artifacts]
 [2024-06-04 19:04:42,373: INFO: common: created directory at: artifacts/data_validation]
+[2024-06-13 16:01:27,309: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-06-13 16:01:27,322: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-13 16:01:27,332: INFO: common: created directory at: artifacts]
+[2024-06-13 16:04:32,737: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-06-13 16:04:32,743: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-13 16:04:32,747: INFO: common: created directory at: artifacts]
+[2024-06-13 16:26:32,356: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-06-13 16:26:32,360: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-06-13 16:26:32,361: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-13 16:26:32,362: INFO: common: created directory at: artifacts]
+[2024-06-13 16:26:32,363: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-06-13 16:26:32,364: INFO: data_ingestion: File already exists of size: ~ 7718 KB]
+[2024-06-13 16:26:32,551: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-06-13 16:26:32,552: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2024-06-13 16:26:32,556: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-06-13 16:26:32,557: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-13 16:26:32,558: INFO: common: created directory at: artifacts]
+[2024-06-13 16:26:32,559: INFO: common: created directory at: artifacts/data_validation]
+[2024-06-13 16:26:32,570: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2024-06-13 16:26:32,571: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2024-06-13 16:26:32,575: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-06-13 16:26:32,577: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-13 16:26:32,578: INFO: common: created directory at: artifacts]
+[2024-06-13 16:26:32,579: ERROR: main: "'ConfigBox' object has no attribute 'data_transformation'"]
+Traceback (most recent call last):
+  File "box\\box.py", line 592, in box.box.Box.__getitem__
+KeyError: 'data_transformation'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 631, in box.box.Box.__getattr__
+  File "box\\box.py", line 619, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'data_transformation'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 633, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'data_transformation'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\\config_box.py", line 29, in box.config_box.ConfigBox.__getattr__
+  File "box\\box.py", line 647, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'data_transformation'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 592, in box.box.Box.__getitem__
+KeyError: 'data_transformation'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 631, in box.box.Box.__getattr__
+  File "box\\box.py", line 619, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'data_transformation'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 633, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'data_transformation'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "main.py", line 34, in <module>
+    data_transformation.main()
+  File "C:\Users\llalitha\github\github-NLP\src\textSummarizer\pipeline\stage_03_data_transformation.py", line 12, in main
+    data_transformation_config = config.get_data_transformation_config()
+  File "C:\Users\llalitha\github\github-NLP\src\textSummarizer\config\configuration.py", line 49, in get_data_transformation_config
+    config = self.config.data_transformation
+  File "box\\config_box.py", line 31, in box.config_box.ConfigBox.__getattr__
+  File "box\\box.py", line 647, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'data_transformation'"
+[2024-06-13 16:29:04,891: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-06-13 16:29:04,894: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-06-13 16:29:04,896: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-13 16:29:04,897: INFO: common: created directory at: artifacts]
+[2024-06-13 16:29:04,898: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-06-13 16:29:04,899: INFO: data_ingestion: File already exists of size: ~ 7718 KB]
+[2024-06-13 16:29:05,140: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-06-13 16:29:05,141: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2024-06-13 16:29:05,146: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-06-13 16:29:05,148: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-13 16:29:05,149: INFO: common: created directory at: artifacts]
+[2024-06-13 16:29:05,150: INFO: common: created directory at: artifacts/data_validation]
+[2024-06-13 16:29:05,156: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2024-06-13 16:29:05,157: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2024-06-13 16:29:05,161: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-06-13 16:29:05,163: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-13 16:29:05,164: INFO: common: created directory at: artifacts]
+[2024-06-13 16:29:05,164: ERROR: main: "'ConfigBox' object has no attribute 'data_transformation'"]
+Traceback (most recent call last):
+  File "box\\box.py", line 592, in box.box.Box.__getitem__
+KeyError: 'data_transformation'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 631, in box.box.Box.__getattr__
+  File "box\\box.py", line 619, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'data_transformation'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 633, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'data_transformation'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\\config_box.py", line 29, in box.config_box.ConfigBox.__getattr__
+  File "box\\box.py", line 647, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'data_transformation'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 592, in box.box.Box.__getitem__
+KeyError: 'data_transformation'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 631, in box.box.Box.__getattr__
+  File "box\\box.py", line 619, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'data_transformation'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 633, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'data_transformation'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "main.py", line 34, in <module>
+    data_transformation.main()
+  File "C:\Users\llalitha\github\github-NLP\src\textSummarizer\pipeline\stage_03_data_transformation.py", line 12, in main
+    data_transformation_config = config.get_data_transformation_config()
+  File "C:\Users\llalitha\github\github-NLP\src\textSummarizer\config\configuration.py", line 49, in get_data_transformation_config
+    config = self.config.data_transformation
+  File "box\\config_box.py", line 31, in box.config_box.ConfigBox.__getattr__
+  File "box\\box.py", line 647, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'data_transformation'"
+[2024-06-13 16:33:29,751: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-06-13 16:33:29,755: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-06-13 16:33:29,756: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-13 16:33:29,758: INFO: common: created directory at: artifacts]
+[2024-06-13 16:33:29,759: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-06-13 16:33:29,760: INFO: data_ingestion: File already exists of size: ~ 7718 KB]
+[2024-06-13 16:33:29,942: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-06-13 16:33:29,943: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2024-06-13 16:33:29,947: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-06-13 16:33:29,948: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-13 16:33:29,950: INFO: common: created directory at: artifacts]
+[2024-06-13 16:33:29,951: INFO: common: created directory at: artifacts/data_validation]
+[2024-06-13 16:33:29,959: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2024-06-13 16:33:29,960: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2024-06-13 16:33:29,965: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-06-13 16:33:29,966: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-13 16:33:29,967: INFO: common: created directory at: artifacts]
+[2024-06-13 16:33:29,969: INFO: common: created directory at: artifacts/data_transformation]
+[2024-06-13 16:33:34,622: ERROR: main: Couldn't instantiate the backend tokenizer from one of: 
+(1) a `tokenizers` library serialization file, 
+(2) a slow tokenizer instance to convert or 
+(3) an equivalent slow tokenizer class to instantiate and convert. 
+You need to have sentencepiece installed to convert a slow tokenizer to a fast one.]
+Traceback (most recent call last):
+  File "main.py", line 34, in <module>
+    data_transformation.main()
+  File "C:\Users\llalitha\github\github-NLP\src\textSummarizer\pipeline\stage_03_data_transformation.py", line 13, in main
+    data_transformation = DataTransformation(config=data_transformation_config)
+  File "C:\Users\llalitha\github\github-NLP\src\textSummarizer\conponents\data_transformation.py", line 12, in __init__
+    self.tokenizer = AutoTokenizer.from_pretrained(config.tokenizer_name)
+  File "C:\Users\llalitha\Anaconda3\envs\NLP\lib\site-packages\transformers\models\auto\tokenization_auto.py", line 899, in from_pretrained
+    return tokenizer_class_fast.from_pretrained(pretrained_model_name_or_path, *inputs, **kwargs)
+  File "C:\Users\llalitha\Anaconda3\envs\NLP\lib\site-packages\transformers\tokenization_utils_base.py", line 2110, in from_pretrained
+    return cls._from_pretrained(
+  File "C:\Users\llalitha\Anaconda3\envs\NLP\lib\site-packages\transformers\tokenization_utils_base.py", line 2336, in _from_pretrained
+    tokenizer = cls(*init_inputs, **init_kwargs)
+  File "C:\Users\llalitha\Anaconda3\envs\NLP\lib\site-packages\transformers\models\pegasus\tokenization_pegasus_fast.py", line 137, in __init__
+    super().__init__(
+  File "C:\Users\llalitha\Anaconda3\envs\NLP\lib\site-packages\transformers\tokenization_utils_fast.py", line 127, in __init__
+    raise ValueError(
+ValueError: Couldn't instantiate the backend tokenizer from one of: 
+(1) a `tokenizers` library serialization file, 
+(2) a slow tokenizer instance to convert or 
+(3) an equivalent slow tokenizer class to instantiate and convert. 
+You need to have sentencepiece installed to convert a slow tokenizer to a fast one.
+[2024-06-13 16:37:17,477: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-06-13 16:37:17,481: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-06-13 16:37:17,481: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-13 16:37:17,484: INFO: common: created directory at: artifacts]
+[2024-06-13 16:37:17,486: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-06-13 16:37:27,884: INFO: data_ingestion: artifacts/data_ingestion/data.zip download! with following info: 
+Connection: close
+Content-Length: 7903594
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "dbc016a060da18070593b83afff580c9b300f0b6ea4147a7988433e04df246ca"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: BAA7:81A4E:8ABF0:B2E6F:666AD2BF
+Accept-Ranges: bytes
+Date: Thu, 13 Jun 2024 11:06:42 GMT
+Via: 1.1 varnish
+X-Served-By: cache-hyd1100029-HYD
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1718276802.958343,VS0,VE758
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: 4da5923410b83b56288b2b1d87dbc1eaedad9cc5
+Expires: Thu, 13 Jun 2024 11:11:42 GMT
+Source-Age: 0
+
+]
+[2024-06-13 16:37:28,085: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-06-13 16:37:28,086: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2024-06-13 16:37:28,089: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-06-13 16:37:28,091: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-13 16:37:28,092: INFO: common: created directory at: artifacts]
+[2024-06-13 16:37:28,093: INFO: common: created directory at: artifacts/data_validation]
+[2024-06-13 16:37:28,102: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2024-06-13 16:37:28,103: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2024-06-13 16:37:28,107: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-06-13 16:37:28,109: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-13 16:37:28,110: INFO: common: created directory at: artifacts]
+[2024-06-13 16:37:28,112: INFO: common: created directory at: artifacts/data_transformation]
+[2024-06-13 16:37:28,386: ERROR: main: Couldn't instantiate the backend tokenizer from one of: 
+(1) a `tokenizers` library serialization file, 
+(2) a slow tokenizer instance to convert or 
+(3) an equivalent slow tokenizer class to instantiate and convert. 
+You need to have sentencepiece installed to convert a slow tokenizer to a fast one.]
+Traceback (most recent call last):
+  File "main.py", line 34, in <module>
+    data_transformation.main()
+  File "C:\Users\llalitha\github\github-NLP\src\textSummarizer\pipeline\stage_03_data_transformation.py", line 13, in main
+    data_transformation = DataTransformation(config=data_transformation_config)
+  File "C:\Users\llalitha\github\github-NLP\src\textSummarizer\conponents\data_transformation.py", line 12, in __init__
+    self.tokenizer = AutoTokenizer.from_pretrained(config.tokenizer_name)
+  File "C:\Users\llalitha\Anaconda3\envs\NLP\lib\site-packages\transformers\models\auto\tokenization_auto.py", line 899, in from_pretrained
+    return tokenizer_class_fast.from_pretrained(pretrained_model_name_or_path, *inputs, **kwargs)
+  File "C:\Users\llalitha\Anaconda3\envs\NLP\lib\site-packages\transformers\tokenization_utils_base.py", line 2110, in from_pretrained
+    return cls._from_pretrained(
+  File "C:\Users\llalitha\Anaconda3\envs\NLP\lib\site-packages\transformers\tokenization_utils_base.py", line 2336, in _from_pretrained
+    tokenizer = cls(*init_inputs, **init_kwargs)
+  File "C:\Users\llalitha\Anaconda3\envs\NLP\lib\site-packages\transformers\models\pegasus\tokenization_pegasus_fast.py", line 137, in __init__
+    super().__init__(
+  File "C:\Users\llalitha\Anaconda3\envs\NLP\lib\site-packages\transformers\tokenization_utils_fast.py", line 127, in __init__
+    raise ValueError(
+ValueError: Couldn't instantiate the backend tokenizer from one of: 
+(1) a `tokenizers` library serialization file, 
+(2) a slow tokenizer instance to convert or 
+(3) an equivalent slow tokenizer class to instantiate and convert. 
+You need to have sentencepiece installed to convert a slow tokenizer to a fast one.
+[2024-06-13 16:41:43,249: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-06-13 16:41:43,253: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-06-13 16:41:43,255: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-13 16:41:43,256: INFO: common: created directory at: artifacts]
+[2024-06-13 16:41:43,257: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-06-13 16:41:43,258: INFO: data_ingestion: File already exists of size: ~ 7718 KB]
+[2024-06-13 16:41:43,440: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-06-13 16:41:43,441: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2024-06-13 16:41:43,445: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-06-13 16:41:43,447: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-13 16:41:43,448: INFO: common: created directory at: artifacts]
+[2024-06-13 16:41:43,449: INFO: common: created directory at: artifacts/data_validation]
+[2024-06-13 16:41:43,458: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2024-06-13 16:41:43,459: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2024-06-13 16:41:43,465: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-06-13 16:41:43,467: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-13 16:41:43,468: INFO: common: created directory at: artifacts]
+[2024-06-13 16:41:43,469: INFO: common: created directory at: artifacts/data_transformation]
+[2024-06-13 16:41:43,869: ERROR: main: Couldn't instantiate the backend tokenizer from one of: 
+(1) a `tokenizers` library serialization file, 
+(2) a slow tokenizer instance to convert or 
+(3) an equivalent slow tokenizer class to instantiate and convert. 
+You need to have sentencepiece installed to convert a slow tokenizer to a fast one.]
+Traceback (most recent call last):
+  File "main.py", line 34, in <module>
+    data_transformation.main()
+  File "C:\Users\llalitha\github\github-NLP\src\textSummarizer\pipeline\stage_03_data_transformation.py", line 13, in main
+    data_transformation = DataTransformation(config=data_transformation_config)
+  File "C:\Users\llalitha\github\github-NLP\src\textSummarizer\conponents\data_transformation.py", line 12, in __init__
+    self.tokenizer = AutoTokenizer.from_pretrained(config.tokenizer_name)
+  File "C:\Users\llalitha\Anaconda3\envs\NLP\lib\site-packages\transformers\models\auto\tokenization_auto.py", line 899, in from_pretrained
+    return tokenizer_class_fast.from_pretrained(pretrained_model_name_or_path, *inputs, **kwargs)
+  File "C:\Users\llalitha\Anaconda3\envs\NLP\lib\site-packages\transformers\tokenization_utils_base.py", line 2110, in from_pretrained
+    return cls._from_pretrained(
+  File "C:\Users\llalitha\Anaconda3\envs\NLP\lib\site-packages\transformers\tokenization_utils_base.py", line 2336, in _from_pretrained
+    tokenizer = cls(*init_inputs, **init_kwargs)
+  File "C:\Users\llalitha\Anaconda3\envs\NLP\lib\site-packages\transformers\models\pegasus\tokenization_pegasus_fast.py", line 137, in __init__
+    super().__init__(
+  File "C:\Users\llalitha\Anaconda3\envs\NLP\lib\site-packages\transformers\tokenization_utils_fast.py", line 127, in __init__
+    raise ValueError(
+ValueError: Couldn't instantiate the backend tokenizer from one of: 
+(1) a `tokenizers` library serialization file, 
+(2) a slow tokenizer instance to convert or 
+(3) an equivalent slow tokenizer class to instantiate and convert. 
+You need to have sentencepiece installed to convert a slow tokenizer to a fast one.
+[2024-06-13 16:51:08,181: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-06-13 16:51:08,185: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-06-13 16:51:08,186: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-13 16:51:08,188: INFO: common: created directory at: artifacts]
+[2024-06-13 16:51:08,189: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-06-13 16:51:08,190: INFO: data_ingestion: File already exists of size: ~ 7718 KB]
+[2024-06-13 16:51:08,365: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-06-13 16:51:08,366: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2024-06-13 16:51:08,369: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-06-13 16:51:08,370: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-13 16:51:08,372: INFO: common: created directory at: artifacts]
+[2024-06-13 16:51:08,373: INFO: common: created directory at: artifacts/data_validation]
+[2024-06-13 16:51:08,382: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2024-06-13 16:51:08,383: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2024-06-13 16:51:08,389: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-06-13 16:51:08,391: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-13 16:51:08,392: INFO: common: created directory at: artifacts]
+[2024-06-13 16:51:08,393: INFO: common: created directory at: artifacts/data_transformation]
+[2024-06-13 16:51:08,728: ERROR: main: Couldn't instantiate the backend tokenizer from one of: 
+(1) a `tokenizers` library serialization file, 
+(2) a slow tokenizer instance to convert or 
+(3) an equivalent slow tokenizer class to instantiate and convert. 
+You need to have sentencepiece installed to convert a slow tokenizer to a fast one.]
+Traceback (most recent call last):
+  File "main.py", line 34, in <module>
+    data_transformation.main()
+  File "C:\Users\llalitha\github\github-NLP\src\textSummarizer\pipeline\stage_03_data_transformation.py", line 13, in main
+    data_transformation = DataTransformation(config=data_transformation_config)
+  File "C:\Users\llalitha\github\github-NLP\src\textSummarizer\conponents\data_transformation.py", line 12, in __init__
+    self.tokenizer = AutoTokenizer.from_pretrained(config.tokenizer_name)
+  File "C:\Users\llalitha\Anaconda3\envs\NLP\lib\site-packages\transformers\models\auto\tokenization_auto.py", line 899, in from_pretrained
+    return tokenizer_class_fast.from_pretrained(pretrained_model_name_or_path, *inputs, **kwargs)
+  File "C:\Users\llalitha\Anaconda3\envs\NLP\lib\site-packages\transformers\tokenization_utils_base.py", line 2110, in from_pretrained
+    return cls._from_pretrained(
+  File "C:\Users\llalitha\Anaconda3\envs\NLP\lib\site-packages\transformers\tokenization_utils_base.py", line 2336, in _from_pretrained
+    tokenizer = cls(*init_inputs, **init_kwargs)
+  File "C:\Users\llalitha\Anaconda3\envs\NLP\lib\site-packages\transformers\models\pegasus\tokenization_pegasus_fast.py", line 137, in __init__
+    super().__init__(
+  File "C:\Users\llalitha\Anaconda3\envs\NLP\lib\site-packages\transformers\tokenization_utils_fast.py", line 127, in __init__
+    raise ValueError(
+ValueError: Couldn't instantiate the backend tokenizer from one of: 
+(1) a `tokenizers` library serialization file, 
+(2) a slow tokenizer instance to convert or 
+(3) an equivalent slow tokenizer class to instantiate and convert. 
+You need to have sentencepiece installed to convert a slow tokenizer to a fast one.
+[2024-06-13 16:56:34,172: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-06-13 16:56:34,177: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-06-13 16:56:34,178: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-13 16:56:34,179: INFO: common: created directory at: artifacts]
+[2024-06-13 16:56:34,180: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-06-13 16:56:34,181: INFO: data_ingestion: File already exists of size: ~ 7718 KB]
+[2024-06-13 16:56:34,365: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-06-13 16:56:34,366: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2024-06-13 16:56:34,370: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-06-13 16:56:34,371: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-13 16:56:34,372: INFO: common: created directory at: artifacts]
+[2024-06-13 16:56:34,373: INFO: common: created directory at: artifacts/data_validation]
+[2024-06-13 16:56:34,383: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2024-06-13 16:56:34,384: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2024-06-13 16:56:34,388: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-06-13 16:56:34,389: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-13 16:56:34,390: INFO: common: created directory at: artifacts]
+[2024-06-13 16:56:34,391: INFO: common: created directory at: artifacts/data_transformation]
+[2024-06-13 16:56:34,702: ERROR: main: Couldn't instantiate the backend tokenizer from one of: 
+(1) a `tokenizers` library serialization file, 
+(2) a slow tokenizer instance to convert or 
+(3) an equivalent slow tokenizer class to instantiate and convert. 
+You need to have sentencepiece installed to convert a slow tokenizer to a fast one.]
+Traceback (most recent call last):
+  File "main.py", line 34, in <module>
+    data_transformation.main()
+  File "C:\Users\llalitha\github\github-NLP\src\textSummarizer\pipeline\stage_03_data_transformation.py", line 13, in main
+    data_transformation = DataTransformation(config=data_transformation_config)
+  File "C:\Users\llalitha\github\github-NLP\src\textSummarizer\conponents\data_transformation.py", line 12, in __init__
+    self.tokenizer = AutoTokenizer.from_pretrained(config.tokenizer_name)
+  File "C:\Users\llalitha\Anaconda3\envs\NLP\lib\site-packages\transformers\models\auto\tokenization_auto.py", line 899, in from_pretrained
+    return tokenizer_class_fast.from_pretrained(pretrained_model_name_or_path, *inputs, **kwargs)
+  File "C:\Users\llalitha\Anaconda3\envs\NLP\lib\site-packages\transformers\tokenization_utils_base.py", line 2110, in from_pretrained
+    return cls._from_pretrained(
+  File "C:\Users\llalitha\Anaconda3\envs\NLP\lib\site-packages\transformers\tokenization_utils_base.py", line 2336, in _from_pretrained
+    tokenizer = cls(*init_inputs, **init_kwargs)
+  File "C:\Users\llalitha\Anaconda3\envs\NLP\lib\site-packages\transformers\models\pegasus\tokenization_pegasus_fast.py", line 137, in __init__
+    super().__init__(
+  File "C:\Users\llalitha\Anaconda3\envs\NLP\lib\site-packages\transformers\tokenization_utils_fast.py", line 127, in __init__
+    raise ValueError(
+ValueError: Couldn't instantiate the backend tokenizer from one of: 
+(1) a `tokenizers` library serialization file, 
+(2) a slow tokenizer instance to convert or 
+(3) an equivalent slow tokenizer class to instantiate and convert. 
+You need to have sentencepiece installed to convert a slow tokenizer to a fast one.
+[2024-06-13 16:58:43,816: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-06-13 16:58:43,820: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-06-13 16:58:43,822: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-13 16:58:43,822: INFO: common: created directory at: artifacts]
+[2024-06-13 16:58:43,824: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-06-13 16:58:43,824: INFO: data_ingestion: File already exists of size: ~ 7718 KB]
+[2024-06-13 16:58:43,998: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-06-13 16:58:43,999: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2024-06-13 16:58:44,004: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-06-13 16:58:44,006: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-13 16:58:44,008: INFO: common: created directory at: artifacts]
+[2024-06-13 16:58:44,009: INFO: common: created directory at: artifacts/data_validation]
+[2024-06-13 16:58:44,018: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2024-06-13 16:58:44,019: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2024-06-13 16:58:44,025: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-06-13 16:58:44,026: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-13 16:58:44,027: INFO: common: created directory at: artifacts]
+[2024-06-13 16:58:44,029: INFO: common: created directory at: artifacts/data_transformation]
+[2024-06-13 16:58:45,169: ERROR: main: 
+PegasusConverter requires the protobuf library but it was not found in your environment. Checkout the instructions on the
+installation page of its repo: https://github.com/protocolbuffers/protobuf/tree/master/python#installation and follow the ones
+that match your environment. Please note that you may need to restart your runtime after installation.
+]
+Traceback (most recent call last):
+  File "main.py", line 34, in <module>
+    data_transformation.main()
+  File "C:\Users\llalitha\github\github-NLP\src\textSummarizer\pipeline\stage_03_data_transformation.py", line 13, in main
+    data_transformation = DataTransformation(config=data_transformation_config)
+  File "C:\Users\llalitha\github\github-NLP\src\textSummarizer\conponents\data_transformation.py", line 12, in __init__
+    self.tokenizer = AutoTokenizer.from_pretrained(config.tokenizer_name)
+  File "C:\Users\llalitha\Anaconda3\envs\NLP\lib\site-packages\transformers\models\auto\tokenization_auto.py", line 899, in from_pretrained
+    return tokenizer_class_fast.from_pretrained(pretrained_model_name_or_path, *inputs, **kwargs)
+  File "C:\Users\llalitha\Anaconda3\envs\NLP\lib\site-packages\transformers\tokenization_utils_base.py", line 2110, in from_pretrained
+    return cls._from_pretrained(
+  File "C:\Users\llalitha\Anaconda3\envs\NLP\lib\site-packages\transformers\tokenization_utils_base.py", line 2336, in _from_pretrained
+    tokenizer = cls(*init_inputs, **init_kwargs)
+  File "C:\Users\llalitha\Anaconda3\envs\NLP\lib\site-packages\transformers\models\pegasus\tokenization_pegasus_fast.py", line 137, in __init__
+    super().__init__(
+  File "C:\Users\llalitha\Anaconda3\envs\NLP\lib\site-packages\transformers\tokenization_utils_fast.py", line 117, in __init__
+    fast_tokenizer = convert_slow_tokenizer(slow_tokenizer)
+  File "C:\Users\llalitha\Anaconda3\envs\NLP\lib\site-packages\transformers\convert_slow_tokenizer.py", line 1631, in convert_slow_tokenizer
+    return converter_class(transformer_tokenizer).converted()
+  File "C:\Users\llalitha\Anaconda3\envs\NLP\lib\site-packages\transformers\convert_slow_tokenizer.py", line 546, in __init__
+    requires_backends(self, "protobuf")
+  File "C:\Users\llalitha\Anaconda3\envs\NLP\lib\site-packages\transformers\utils\import_utils.py", line 1463, in requires_backends
+    raise ImportError("".join(failed))
+ImportError: 
+PegasusConverter requires the protobuf library but it was not found in your environment. Checkout the instructions on the
+installation page of its repo: https://github.com/protocolbuffers/protobuf/tree/master/python#installation and follow the ones
+that match your environment. Please note that you may need to restart your runtime after installation.
+
+[2024-06-13 16:59:52,618: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-06-13 16:59:52,622: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-06-13 16:59:52,622: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-13 16:59:52,623: INFO: common: created directory at: artifacts]
+[2024-06-13 16:59:52,624: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-06-13 16:59:52,625: INFO: data_ingestion: File already exists of size: ~ 7718 KB]
+[2024-06-13 16:59:52,806: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-06-13 16:59:52,807: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2024-06-13 16:59:52,812: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-06-13 16:59:52,814: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-13 16:59:52,816: INFO: common: created directory at: artifacts]
+[2024-06-13 16:59:52,817: INFO: common: created directory at: artifacts/data_validation]
+[2024-06-13 16:59:52,826: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2024-06-13 16:59:52,827: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2024-06-13 16:59:52,831: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-06-13 16:59:52,832: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-13 16:59:52,833: INFO: common: created directory at: artifacts]
+[2024-06-13 16:59:52,835: INFO: common: created directory at: artifacts/data_transformation]
+[2024-06-13 16:59:53,976: ERROR: main: 
+PegasusConverter requires the protobuf library but it was not found in your environment. Checkout the instructions on the
+installation page of its repo: https://github.com/protocolbuffers/protobuf/tree/master/python#installation and follow the ones
+that match your environment. Please note that you may need to restart your runtime after installation.
+]
+Traceback (most recent call last):
+  File "main.py", line 34, in <module>
+    data_transformation.main()
+  File "C:\Users\llalitha\github\github-NLP\src\textSummarizer\pipeline\stage_03_data_transformation.py", line 13, in main
+    data_transformation = DataTransformation(config=data_transformation_config)
+  File "C:\Users\llalitha\github\github-NLP\src\textSummarizer\conponents\data_transformation.py", line 12, in __init__
+    self.tokenizer = AutoTokenizer.from_pretrained(config.tokenizer_name)
+  File "C:\Users\llalitha\Anaconda3\envs\NLP\lib\site-packages\transformers\models\auto\tokenization_auto.py", line 899, in from_pretrained
+    return tokenizer_class_fast.from_pretrained(pretrained_model_name_or_path, *inputs, **kwargs)
+  File "C:\Users\llalitha\Anaconda3\envs\NLP\lib\site-packages\transformers\tokenization_utils_base.py", line 2110, in from_pretrained
+    return cls._from_pretrained(
+  File "C:\Users\llalitha\Anaconda3\envs\NLP\lib\site-packages\transformers\tokenization_utils_base.py", line 2336, in _from_pretrained
+    tokenizer = cls(*init_inputs, **init_kwargs)
+  File "C:\Users\llalitha\Anaconda3\envs\NLP\lib\site-packages\transformers\models\pegasus\tokenization_pegasus_fast.py", line 137, in __init__
+    super().__init__(
+  File "C:\Users\llalitha\Anaconda3\envs\NLP\lib\site-packages\transformers\tokenization_utils_fast.py", line 117, in __init__
+    fast_tokenizer = convert_slow_tokenizer(slow_tokenizer)
+  File "C:\Users\llalitha\Anaconda3\envs\NLP\lib\site-packages\transformers\convert_slow_tokenizer.py", line 1631, in convert_slow_tokenizer
+    return converter_class(transformer_tokenizer).converted()
+  File "C:\Users\llalitha\Anaconda3\envs\NLP\lib\site-packages\transformers\convert_slow_tokenizer.py", line 546, in __init__
+    requires_backends(self, "protobuf")
+  File "C:\Users\llalitha\Anaconda3\envs\NLP\lib\site-packages\transformers\utils\import_utils.py", line 1463, in requires_backends
+    raise ImportError("".join(failed))
+ImportError: 
+PegasusConverter requires the protobuf library but it was not found in your environment. Checkout the instructions on the
+installation page of its repo: https://github.com/protocolbuffers/protobuf/tree/master/python#installation and follow the ones
+that match your environment. Please note that you may need to restart your runtime after installation.
+
+[2024-06-13 17:01:01,492: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-06-13 17:01:01,497: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-06-13 17:01:01,498: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-13 17:01:01,499: INFO: common: created directory at: artifacts]
+[2024-06-13 17:01:01,500: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-06-13 17:01:01,501: INFO: data_ingestion: File already exists of size: ~ 7718 KB]
+[2024-06-13 17:01:01,671: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-06-13 17:01:01,672: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2024-06-13 17:01:01,675: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-06-13 17:01:01,677: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-13 17:01:01,679: INFO: common: created directory at: artifacts]
+[2024-06-13 17:01:01,680: INFO: common: created directory at: artifacts/data_validation]
+[2024-06-13 17:01:01,687: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2024-06-13 17:01:01,688: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2024-06-13 17:01:01,694: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-06-13 17:01:01,696: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-13 17:01:01,697: INFO: common: created directory at: artifacts]
+[2024-06-13 17:01:01,698: INFO: common: created directory at: artifacts/data_transformation]
+[2024-06-13 17:01:02,412: ERROR: main: 
+PegasusConverter requires the protobuf library but it was not found in your environment. Checkout the instructions on the
+installation page of its repo: https://github.com/protocolbuffers/protobuf/tree/master/python#installation and follow the ones
+that match your environment. Please note that you may need to restart your runtime after installation.
+]
+Traceback (most recent call last):
+  File "main.py", line 34, in <module>
+    data_transformation.main()
+  File "C:\Users\llalitha\github\github-NLP\src\textSummarizer\pipeline\stage_03_data_transformation.py", line 13, in main
+    data_transformation = DataTransformation(config=data_transformation_config)
+  File "C:\Users\llalitha\github\github-NLP\src\textSummarizer\conponents\data_transformation.py", line 12, in __init__
+    self.tokenizer = AutoTokenizer.from_pretrained(config.tokenizer_name)
+  File "C:\Users\llalitha\Anaconda3\envs\NLP\lib\site-packages\transformers\models\auto\tokenization_auto.py", line 899, in from_pretrained
+    return tokenizer_class_fast.from_pretrained(pretrained_model_name_or_path, *inputs, **kwargs)
+  File "C:\Users\llalitha\Anaconda3\envs\NLP\lib\site-packages\transformers\tokenization_utils_base.py", line 2110, in from_pretrained
+    return cls._from_pretrained(
+  File "C:\Users\llalitha\Anaconda3\envs\NLP\lib\site-packages\transformers\tokenization_utils_base.py", line 2336, in _from_pretrained
+    tokenizer = cls(*init_inputs, **init_kwargs)
+  File "C:\Users\llalitha\Anaconda3\envs\NLP\lib\site-packages\transformers\models\pegasus\tokenization_pegasus_fast.py", line 137, in __init__
+    super().__init__(
+  File "C:\Users\llalitha\Anaconda3\envs\NLP\lib\site-packages\transformers\tokenization_utils_fast.py", line 117, in __init__
+    fast_tokenizer = convert_slow_tokenizer(slow_tokenizer)
+  File "C:\Users\llalitha\Anaconda3\envs\NLP\lib\site-packages\transformers\convert_slow_tokenizer.py", line 1631, in convert_slow_tokenizer
+    return converter_class(transformer_tokenizer).converted()
+  File "C:\Users\llalitha\Anaconda3\envs\NLP\lib\site-packages\transformers\convert_slow_tokenizer.py", line 546, in __init__
+    requires_backends(self, "protobuf")
+  File "C:\Users\llalitha\Anaconda3\envs\NLP\lib\site-packages\transformers\utils\import_utils.py", line 1463, in requires_backends
+    raise ImportError("".join(failed))
+ImportError: 
+PegasusConverter requires the protobuf library but it was not found in your environment. Checkout the instructions on the
+installation page of its repo: https://github.com/protocolbuffers/protobuf/tree/master/python#installation and follow the ones
+that match your environment. Please note that you may need to restart your runtime after installation.
+
+[2024-06-13 17:06:58,226: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-06-13 17:06:58,230: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-06-13 17:06:58,231: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-13 17:06:58,233: INFO: common: created directory at: artifacts]
+[2024-06-13 17:06:58,234: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-06-13 17:06:58,235: INFO: data_ingestion: File already exists of size: ~ 7718 KB]
+[2024-06-13 17:06:58,412: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-06-13 17:06:58,413: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2024-06-13 17:06:58,417: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-06-13 17:06:58,418: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-13 17:06:58,419: INFO: common: created directory at: artifacts]
+[2024-06-13 17:06:58,420: INFO: common: created directory at: artifacts/data_validation]
+[2024-06-13 17:06:58,430: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2024-06-13 17:06:58,431: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2024-06-13 17:06:58,436: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-06-13 17:06:58,438: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-13 17:06:58,440: INFO: common: created directory at: artifacts]
+[2024-06-13 17:06:58,441: INFO: common: created directory at: artifacts/data_transformation]
+[2024-06-13 17:07:04,936: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2024-06-13 17:36:07,581: INFO: config: PyTorch version 2.3.1 available.]
+[2024-06-13 17:36:37,173: INFO: config: PyTorch version 2.3.1 available.]
+[2024-06-13 17:36:38,977: INFO: main: *******************]
+[2024-06-13 17:36:38,978: INFO: main: >>>>>> stage Model Trainer stage started <<<<<<]
+[2024-06-13 17:36:38,987: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-06-13 17:36:38,991: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-13 17:36:38,993: INFO: common: created directory at: artifacts]
+[2024-06-13 17:36:38,997: INFO: common: created directory at: artifacts/model_trainer]
+[2024-06-13 17:44:13,346: ERROR: main: Using the `Trainer` with `PyTorch` requires `accelerate>=0.21.0`: Please run `pip install transformers[torch]` or `pip install accelerate -U`]
+Traceback (most recent call last):
+  File "main.py", line 48, in <module>
+    model_trainer.main()
+  File "C:\Users\llalitha\github\github-NLP\src\textSummarizer\pipeline\stage_04_model_trainer.py", line 14, in main
+    model_trainer_config.train()
+  File "C:\Users\llalitha\github\github-NLP\src\textSummarizer\conponents\model_trainer.py", line 34, in train
+    trainer_args = TrainingArguments(
+  File "<string>", line 128, in __init__
+  File "C:\Users\llalitha\Anaconda3\envs\NLP\lib\site-packages\transformers\training_args.py", line 1641, in __post_init__
+    and (self.device.type == "cpu" and not is_torch_greater_or_equal_than_2_3)
+  File "C:\Users\llalitha\Anaconda3\envs\NLP\lib\site-packages\transformers\training_args.py", line 2149, in device
+    return self._setup_devices
+  File "C:\Users\llalitha\Anaconda3\envs\NLP\lib\site-packages\transformers\utils\generic.py", line 59, in __get__
+    cached = self.fget(obj)
+  File "C:\Users\llalitha\Anaconda3\envs\NLP\lib\site-packages\transformers\training_args.py", line 2055, in _setup_devices
+    raise ImportError(
+ImportError: Using the `Trainer` with `PyTorch` requires `accelerate>=0.21.0`: Please run `pip install transformers[torch]` or `pip install accelerate -U`

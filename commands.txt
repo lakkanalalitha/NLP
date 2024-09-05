@@ -14,3 +14,7 @@ pip install python-box[all]~=7.0 --upgrade --force
 from ensure import ensure_annotations
 
 https://github.com/entbappy/Branching-tutorial/raw/master/samsumdata.zip
+
+pip install sentencepiece
+pip install protobuf
+pip install torch
